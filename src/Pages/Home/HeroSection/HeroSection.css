@@ -1,0 +1,55 @@
+
+
+.heroNoise::after {
+    background-image: url("./Hero/BG Noise Blending Mode Overlay.png");
+    background-size: cover;
+}
+
+
+.glowing-image {
+    filter: drop-shadow(10px 10px 50px rgba(14, 135, 248, 0.5));
+    transform: scaleZ(1);
+    transition: transform 1s ease-in-out;
+    transition: filter 1s ease-in-out;
+
+}
+.glowing-image:hover {
+    filter: drop-shadow(0 0 5px rgba(14, 213, 248, 0.5));
+    transform: scale3d(1.1);
+}
+
+/* .glowing-image {
+    filter: drop-shadow(0 0 10px rgba(14, 213, 248, 0.5));
+    
+} */
+.cta-button {
+   
+    cursor: pointer;
+    animation: rotate 8s infinite;
+}
+
+.cta-button:hover {
+    animation: rotate 24s infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(-90deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.gifCss{
+    transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
+}
+
+.gifCss:hover {
+    transform: translateY(20px); /* Move down by 20px */
+    width: 150px; /* Increase width */
+    height: 150px; /* Increase height */
+}
